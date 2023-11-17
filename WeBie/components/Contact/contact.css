@@ -1,3 +1,11 @@
 .contact{
     margin-top: 200px;
 }
+[theme = "d"]{
+    background-color: black;
+    color: white;
+}
+[theme = "l"]{
+    background-color: aliceblue;
+    color: black;
+}

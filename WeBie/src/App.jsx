@@ -8,12 +8,12 @@ import Contact from '../components/Contact/contact'
 export default function App() {
   return (
     <>
-      <Navbar />
+      <Navbar callback={value}/>
       <Routes>
         <Route path="/" element={<About/>}/>
         <Route path="/work" element={<Work/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
-        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/contact" element={<Contact theme = "d"/>}/>
       </Routes>
     </>
   )
