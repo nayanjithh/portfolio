@@ -1,0 +1,104 @@
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 120px);
+    padding: 10px 10px 10px 150px;
+    background-color: #252525;
+    color: #FFF500;
+    margin-top: 100px;
+    font-family: Montserrat;
+}
+.Hi{
+    margin-top: 100px;
+    font-size: 38px;
+    font-weight: bold;
+}
+.name{
+    color: white;
+    font-size: 76px;
+}
+.web-{
+    font-size: 56px;
+}
+.animateText{
+    margin-left: 10px;
+    position: relative;
+    animation: text 2s infinite alternate ease-in-out;
+}
+.animateText::before{
+    margin-left: 10px;
+    position: relative;
+    content: "Developer";
+    width: 322px;
+    animation: text 4s infinite 4s alternate ease-in-out;
+}
+.animateText::after{
+    position: absolute;
+    content: " ";
+    width: 0;
+    border-left: 6px solid #FFF500;
+    background-color: #252525;
+    right: -30px;
+    height: 100%;
+    animation: cursor 2s infinite alternate linear,blink 0.5s linear infinite alternate;
+}
+@keyframes cursor {
+    100%{
+        width: calc(100% + 30px);
+    }
+}
+@keyframes blink {
+    100%{
+        border: none;
+    }
+}
+@keyframes text {
+    100%{
+        content: "Designer";
+        width: 322px;
+    }
+}
+.aboutDetails{
+    color: white;
+    font-size: 25px;
+    margin: 100px 150px 0px 0px;
+}
+.vector1,.aboutimages .vector2{
+    bottom: 100px;
+    position: absolute;
+    height: 500px;
+    right: 100px;
+    z-index: 0;
+}
+.aboutimages .vector2{
+    bottom: 100px;
+    position: absolute;
+    height: 500px;
+    right: 200px;
+    z-index: 1;
+}
+.aboutimages .myPhoto{
+    bottom: -50px;
+    position: absolute;
+    height: 700px;
+    z-index: 2;
+}
+.aboutResume{
+    position: absolute;
+    bottom: 80px;
+    right: 48%;
+    background-color: #FFF500;
+    color: #252525;
+    padding: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.vector1,.vector2{
+    transition: transform 2s ease;
+}
+.myPhoto:hover + .vector .vector1{
+    transform: rotate(10deg) translate(50px,50px);
+}
+.myPhoto:hover + .vector .vector2{
+    transform: rotate(10deg) translate(-30px,50px);
+}

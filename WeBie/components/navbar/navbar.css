@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    color: #FFF500;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #252525;
+}
+.Titel{
+    font-family: satisfy;
+    font-size: 40px;
+    margin-left: 200px;
+    top: 20px;
+    left: 150px;
+    cursor: pointer;
+}
+.buttons{
+    text-align: right;
+    margin-right: 60px;
+}
+.buttons a{
+    font-family: Montserrat;
+    color: #FFF500;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 60px;
+    cursor: pointer;
+}
+.active{
+    background-color: #FFF500;
+    color: #252525 !important;
+    padding: 15px;
+    border-radius: 25px;
+}
