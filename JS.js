@@ -9,6 +9,22 @@
 //     menu = !menu;
 // }
 
+
+var vector1 = document.querySelector(".vector1");
+var vector3 = document.querySelector(".vector3");
+
+document.querySelector(".Titel").addEventListener("click", function() {
+    document.body.classList.toggle("lightTheme");
+    if(document.body.classList.contains("lightTheme")){
+        vector1.style.display = "none";
+        vector3.style.display = "block";
+    }
+    else{
+        vector1.style.display = "block";
+        vector3.style.display = "none";
+    }
+});
+
 var type;
 var edu = document.querySelector(".EDUCATION");
 var exp = document.querySelector(".EXPIRIENCE");

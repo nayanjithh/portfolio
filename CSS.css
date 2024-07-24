@@ -5,16 +5,30 @@
     scroll-behavior: smooth;
 }
 
+:root{
+    --background: #252525;
+    --highlights-1: #FFF500;
+    --highlights-2: white;
+    --highlights-3: #252525;
+}
+
+.lightTheme{
+    --background: white;
+    --highlights-1: #FF6B00;
+    --highlights-2: #252525;
+    --highlights-3: grey;
+}
+
 .navbar {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    color: #FFF500;
+    color: var(--highlights-1);
     position: fixed;
     top: 0;
     width: 100%;
     height: 6.5rem;
-    background-color: #252525;
+    background-color: var(--background);
     z-index: 100;
 
     .Titel {
@@ -33,7 +47,7 @@
 
         a {
             font-family: Montserrat;
-            color: white;
+            color: var(--highlights-2);
             text-decoration: none;
             font-weight: bold;
             margin: 3.9rem;
@@ -41,7 +55,7 @@
             transition: 0.5s;
 
             &:hover{
-                color: #FFF500;
+                color: var(--highlights-1);
             }
         }
     }
@@ -64,8 +78,8 @@ section{
     grid-template-columns: 1fr 1fr;
     height: 43.1rem;
     padding: 7.2rem 0.65rem 0.65rem 9.75rem;
-    background-color: #252525;
-    color: #FFF500;
+    background-color: var(--background);
+    color: var(--highlights-1);
     font-family: Montserrat;
 
     .myDetails {
@@ -76,7 +90,7 @@ section{
         }
 
         .name {
-            color: white;
+            color: var(--highlights-2);
             font-size: 4.94rem;
         }
 
@@ -102,8 +116,8 @@ section{
                     position: absolute;
                     content: " ";
                     width: 0;
-                    border-left: 0.39rem solid #FFF500;
-                    background-color: #252525;
+                    border-left: 0.39rem solid var(--highlights-1);
+                    background-color: var(--background);
                     right: -1.95rem;
                     height: 100%;
                     animation: cursor 2s infinite alternate linear, blink 0.5s linear infinite alternate;
@@ -112,7 +126,7 @@ section{
         }
 
         .aboutDetails {
-            color: white;
+            color: var(--highlights-2);
             font-size: 1.625rem;
             margin: 6.5rem 9.75rem 0 0;
         }
@@ -120,7 +134,7 @@ section{
 
     .aboutimages {
         position: relative;
-        .vector1, .vector2 {
+        .vector1, .vector2, .vector3 {
             transition: transform 2s ease;
         }
 
@@ -139,6 +153,15 @@ section{
             right: 13rem;
             z-index: 1;
         }
+        
+        .vector3{
+            display: none;
+            top: 7rem;
+            position: absolute;
+            height: 32.5rem;
+            right: 5rem;
+            z-index: 0;
+        }
 
         .myPhoto {
             top: 1.3rem;
@@ -153,14 +176,18 @@ section{
             &:hover + .vector .vector2 {
                 transform: rotate(10deg) translate(-1.95rem, 3.25rem);
             }
+
+            &:hover + .vector .vector3 {
+                transform: rotate(10deg) translate(3.25rem, 3.25rem);
+            }
         }
 
         .aboutResume {
             position: absolute;
             top: 40rem;
             right: 48%;
-            background-color: #FFF500;
-            color: #252525;
+            background-color: var(--highlights-1);
+            color: var(--background);
             padding: 1.17rem;
             border-radius: 1.95rem;
             cursor: pointer;
@@ -172,11 +199,11 @@ section{
     scroll-behavior: smooth;
     scroll-snap-align: start;
     height: 43.7rem;
-    background-color: #252525;
+    background-color: var(--background);
     padding: 6rem 5rem 1.2rem 5rem;
 
     .title{
-        color: #FFF500;
+        color: var(--highlights-1);
         font-family:  Montserrat;
         text-decoration: underline;
         text-align: center;
@@ -193,12 +220,12 @@ section{
             justify-items: center;
             align-items: center;
             height: 36rem;
-            border-right: 0.2rem solid white;
+            border-right: 0.2rem solid var(--highlights-2);
 
             button {
-                background-color: #252525;
+                background-color: var(--background);
                 height: 3rem;
-                color: #FFF500;
+                color: var(--highlights-1);
                 font-family:  Montserrat;
                 font-size: x-large;
                 border: none;
@@ -206,7 +233,7 @@ section{
             }
 
             button:hover{
-                color: white;
+                color: var(--highlights-2);
             }
 
         }
@@ -218,7 +245,7 @@ section{
                 display: none;
 
                 h1{
-                    color: #FFF500;
+                    color: var(--highlights-1);
                     font-size: xx-large;
                     text-decoration: underline;
                     font-family:  Montserrat;
@@ -226,7 +253,7 @@ section{
                 }
 
                 p {
-                    color: white;
+                    color: var(--highlights-2);
                     font-family:  Montserrat;
                     font-size: x-large;
 
@@ -248,11 +275,11 @@ section{
     scroll-behavior: smooth;
     scroll-snap-align: start;
     height: 43.7rem;
-    background-color: #252525;
+    background-color: var(--background);
     padding: 6rem 5rem 1.2rem 5rem;
     
     .title{
-        color: #FFF500;
+        color: var(--highlights-1);
         font-family:  Montserrat;
         text-decoration: underline;
         text-align: center;
@@ -266,7 +293,7 @@ section{
         justify-items: center;
         height: 37.5rem;
         width: 100%;
-        color: #FFF500;
+        color: var(--highlights-1);
         font-family: Montserrat;
         padding: 2rem 0rem 0rem 0rem;
     
@@ -311,7 +338,7 @@ section{
     
                     a {
                         text-decoration: none;
-                        color: #FFF500;
+                        color: var(--highlights-1);
                         font-size: 1.2rem;
                     }
                 }
@@ -328,11 +355,11 @@ section{
     scroll-behavior: smooth;
     scroll-snap-align: start;
     height: 43.7rem;
-    background-color: #252525;
+    background-color: var(--background);
     padding: 6rem 5rem 1.2rem 5rem;
     
     .title{
-        color: #FFF500;
+        color: var(--highlights-1);
         font-family:  Montserrat;
         text-decoration: underline;
         text-align: center;
@@ -344,7 +371,7 @@ section{
         grid-template-columns: 1fr 1fr;
 
         .details{
-            color: white;
+            color: var(--highlights-2);
             font-size: x-large;
             font-family:  Montserrat;
             margin-top: 1.5rem;
@@ -355,11 +382,11 @@ section{
             justify-items: center;
 
             input {
-                background-color: #252525;
-                border: 0.1rem solid white;
+                background-color: var(--background);
+                border: 0.1rem solid var(--highlights-2);
                 padding: 1rem;
                 margin: 0.5rem;
-                color: white;
+                color: var(--highlights-2);
             }
 
             .a{
@@ -377,7 +404,7 @@ section{
 
             button {
                 margin-top: 2rem;
-                background-color: #FFF500;
+                background-color: var(--highlights-1);
                 font-family:  Montserrat;
                 padding: 1rem 2rem;
                 border-radius: 2rem;
