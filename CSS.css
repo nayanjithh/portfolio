@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    color: #FFF500;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6.5rem;
+    background-color: #252525;
+    z-index: 100;
+
+    .Titel {
+        font-family: satisfy;
+        font-size: 2.6rem;
+        margin-left: 13rem;
+        top: 1.3rem;
+        left: 9.75rem;
+        cursor: pointer;
+    }
+
+    .buttons {
+        text-align: right;
+        margin-right: 3.9rem;
+        display: block;
+
+        a {
+            font-family: Montserrat;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 3.9rem;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover{
+                color: #FFF500;
+            }
+        }
+    }
+
+    .buttons-2{
+        display: none;
+    }
+}
+
+html {
+    scroll-snap-type: y proximity;
+}
+
+section{
+    scroll-snap-align: start;
+}
+.Home {
+    display: grid;
+    scroll-behavior: smooth;
+    grid-template-columns: 1fr 1fr;
+    height: 43.1rem;
+    padding: 7.2rem 0.65rem 0.65rem 9.75rem;
+    background-color: #252525;
+    color: #FFF500;
+    font-family: Montserrat;
+
+    .myDetails {
+        .Hi {
+            margin-top: 3.65rem;
+            font-size: 2.47rem;
+            font-weight: bold;
+        }
+
+        .name {
+            color: white;
+            font-size: 4.94rem;
+        }
+
+        .web- {
+            span{
+                font-size: 3.64rem;
+            }
+
+            .animateText {
+                margin-left: 0.65rem;
+                position: relative;
+                animation: text 2s infinite alternate ease-in-out;
+
+                &::before {
+                    margin-left: 0.65rem;
+                    position: relative;
+                    content: "Developer";
+                    width: 20.93rem;
+                    animation: text 4s infinite 4s alternate ease-in-out;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: " ";
+                    width: 0;
+                    border-left: 0.39rem solid #FFF500;
+                    background-color: #252525;
+                    right: -1.95rem;
+                    height: 100%;
+                    animation: cursor 2s infinite alternate linear, blink 0.5s linear infinite alternate;
+                }
+            }
+        }
+
+        .aboutDetails {
+            color: white;
+            font-size: 1.625rem;
+            margin: 6.5rem 9.75rem 0 0;
+        }
+    }
+
+    .aboutimages {
+        position: relative;
+        .vector1, .vector2 {
+            transition: transform 2s ease;
+        }
+
+        .vector1 {
+            top: 10rem;
+            position: absolute;
+            height: 32.5rem;
+            right: 6.5rem;
+            z-index: 0;
+        }
+
+        .vector2 {
+            top: 10rem;
+            position: absolute;
+            height: 32.5rem;
+            right: 13rem;
+            z-index: 1;
+        }
+
+        .myPhoto {
+            top: 1.3rem;
+            position: absolute;
+            height: 42.4rem;
+            z-index: 2;
+
+            &:hover + .vector .vector1 {
+                transform: rotate(10deg) translate(3.25rem, 3.25rem);
+            }
+
+            &:hover + .vector .vector2 {
+                transform: rotate(10deg) translate(-1.95rem, 3.25rem);
+            }
+        }
+
+        .aboutResume {
+            position: absolute;
+            top: 40rem;
+            right: 48%;
+            background-color: #FFF500;
+            color: #252525;
+            padding: 1.17rem;
+            border-radius: 1.95rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.About {
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
+    height: 43.7rem;
+    background-color: #252525;
+    padding: 6rem 5rem 1.2rem 5rem;
+
+    .title{
+        color: #FFF500;
+        font-family:  Montserrat;
+        text-decoration: underline;
+        text-align: center;
+        font-size: xx-large;
+        margin-bottom: 2.5rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+
+        .About-navbar {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            height: 36rem;
+            border-right: 0.2rem solid white;
+
+            button {
+                background-color: #252525;
+                height: 3rem;
+                color: #FFF500;
+                font-family:  Montserrat;
+                font-size: x-large;
+                border: none;
+                cursor: pointer;
+            }
+
+            button:hover{
+                color: white;
+            }
+
+        }
+
+        .content {
+            padding-left: 3rem;
+
+            div{
+                display: none;
+
+                h1{
+                    color: #FFF500;
+                    font-size: xx-large;
+                    text-decoration: underline;
+                    font-family:  Montserrat;
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    color: white;
+                    font-family:  Montserrat;
+                    font-size: x-large;
+
+                    strong{
+                        color: grey;
+                        font-size: x-large;
+                    }
+                }
+            }
+
+            .EDUCATION {
+                display: block;
+            }
+        }
+    }
+}
+
+.work{
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
+    height: 43.7rem;
+    background-color: #252525;
+    padding: 6rem 5rem 1.2rem 5rem;
+    
+    .title{
+        color: #FFF500;
+        font-family:  Montserrat;
+        text-decoration: underline;
+        text-align: center;
+        font-size: xx-large;
+        margin-bottom: 2.5rem;
+    }
+
+    .works {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        height: 37.5rem;
+        width: 100%;
+        color: #FFF500;
+        font-family: Montserrat;
+        padding: 2rem 0rem 0rem 0rem;
+    
+        .workBox {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 16rem;
+            width: 19.5rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: 1s;
+    
+            &:hover {
+                transform: scale(1.2);
+            }
+    
+            .boxImg {
+                height: 100%;
+                cursor: zoom-in;
+    
+                &:hover + .workTitle {
+                    height: 45px;
+                    opacity: 0.3;
+                }
+            }
+    
+            .workTitle {
+                display: grid;
+                width: 100%;
+                height: 50%;
+                background-color: #2F2F2D;
+                position: absolute;
+                bottom: 0;
+                text-align: center;
+                transition: 1s;
+    
+                .workTitleMain {
+                    padding: 10px;
+                    font-weight: 1px;
+    
+                    a {
+                        text-decoration: none;
+                        color: #FFF500;
+                        font-size: 1.2rem;
+                    }
+                }
+    
+                .workTitleSub {
+                    color: white;
+                }
+            }
+        }
+    }    
+}
+
+.contact{
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
+    height: 43.7rem;
+    background-color: #252525;
+    padding: 6rem 5rem 1.2rem 5rem;
+    
+    .title{
+        color: #FFF500;
+        font-family:  Montserrat;
+        text-decoration: underline;
+        text-align: center;
+        font-size: xx-large;
+        margin-bottom: 5rem;
+    }
+    .contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .details{
+            color: white;
+            font-size: x-large;
+            font-family:  Montserrat;
+            margin-top: 1.5rem;
+        }
+
+        .send-details{
+            display: grid;
+            justify-items: center;
+
+            input {
+                background-color: #252525;
+                border: 0.1rem solid white;
+                padding: 1rem;
+                margin: 0.5rem;
+                color: white;
+            }
+
+            .a{
+                display: grid;
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+            }
+            input[placeholder = "Message"] {
+                width: 93.2%;
+                height: 18rem;
+            }
+            input[placeholder = "Message"]::placeholder {
+                text-align: center;
+            }
+
+            button {
+                margin-top: 2rem;
+                background-color: #FFF500;
+                font-family:  Montserrat;
+                padding: 1rem 2rem;
+                border-radius: 2rem;
+                font-size: large;
+                border: none;
+            }
+        }
+    }
+}
+
+@keyframes cursor {
+    100% {
+        width: calc(100% + 1.95rem);
+    }
+}
+
+@keyframes blink {
+    100% {
+        border: none;
+    }
+}
+
+@keyframes text {
+    100% {
+        content: "Designer";
+        width: 20.93rem;
+    }
+}

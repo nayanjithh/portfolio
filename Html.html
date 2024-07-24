@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./CSS.css" rel="stylesheet">
+    <link href="./mobile.css" rel="stylesheet">
+    <script src="JS.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/83db7ea483.js" crossorigin="anonymous"></script>   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Satisfy&display=swap" rel="stylesheet">
+
+    <title>Webie</title>
+
+</head>
+<body>
+    <div class="navbar">
+        <span class='Titel'>WeBie</span>
+        <div class="buttons">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#work">WORKS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        <div class="buttons-2">
+            <i class="fa-solid fa-bars fa-2xl" onclick="toggleMenu()" style="color: #ffffff;"></i>
+            <div class="links">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#work">WORKS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section id="home" class="Home">
+            <div class="myDetails">
+                <div class="Hi">
+                    Hi, I am
+                </div>
+                <div class="name">
+                    Nayanjith
+                </div>
+                <div class="web-">
+                    <span>Web</span>
+                    <span class="animateText"></span>
+                </div>
+                <div class="aboutDetails">
+                A computer science student with a strong dedication to become a successful Web Developer or Designer. In search of opportunities to showcase my inner creativity and skills.
+                </div>
+            </div>
+            <div class="aboutimages">
+                <img class="myPhoto" src="./img/myPhoto.png"/>
+                <div class="vector">
+                    <img class="vector1" src="./img/Vector1.png"/>
+                    <img class="vector2" src="./img/Vector2.png"/>
+                </div>
+                <div class="aboutResume">Resume</div>
+            </div>
+        </section>
+        <section id="about" class="About">
+            <div class="title">ABOUT ME</div>
+            <div class="container">
+                <div class="About-navbar">
+                    <button onclick="display('edu')">EDUCATION</button>
+                    <button onclick="display('exp')">EXPIRIENCE</button>
+                    <button onclick="display('lan')">LANGUAGES</button>
+                    <button onclick="display('cer')">CERTIFICATES</button>
+                    <button onclick="display('ski')">SKILLS</button>
+                </div>
+                <div class="content">
+                    <div class="EDUCATION">
+                        <h1>EDUCATION</h1>
+                        <p>
+                            <strong>2020 - 22</strong>
+                            <br>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Higher Secondary Education
+                            computer science
+                            St.Micheals kannur
+                            <br><br>
+                            <br><br>
+                            <strong>2022 - 26</strong>
+                            <br>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bachelor of Technology
+                            computer science
+                            NSS College of Engineering Palakkad</p>
+                    </div>
+                    <div class="EXPIRIENCE">
+                        <h1>EXPIRIENCE</h1>
+                            <p><strong>Juniour red cross (2015-2016)</strong>
+                            <br><br>
+                            <br><br>
+                            <strong>Overnight Hackathon:</strong> Dusk Till Dawn
+                            Developed "fastionQ" : A prototype model used for fasion desiging
+                            and creative skill showcasing.
+                            <br><br>
+                            <br><br>
+                            <strong>Cyber Security Workshop- HACKTIV</strong>
+                            </p>
+                    </div>
+                    <div class="LANGUAGES">
+                        <h1>LANGUAGES</h1>
+                        <p><strong>Malayalam </strong>(Mother tongue)
+                            <br><br>
+                            <br><br>
+                            <strong>English</strong>
+                            <br><br>
+                            <br><br>
+                            <strong>Hindi</strong>
+                        </p>
+                    </div>
+                    <div class="CERTIFICATES">
+                        <h1>CERTIFICATES</h1>
+                        <p>
+                            Communucation skill- TCS ION
+                            <br><br>
+                            <br><br>
+                            Overnight Hackathon- Dusk Till Dawn
+                            <br><br>
+                            <br><br>
+                            Dyuksha volunteer certificate
+                        </p>
+                    </div>
+                    <div class="SKILLS">
+                        <h1>SKILLS</h1>
+                        <p>
+                            Leardship and team managment
+                            <br><br>
+                            Creative and designing skill
+                            <br><br>
+                            Problem solving and analytical thinking
+                            <br><br>
+                            Excellent communication abilities
+                            <br><br>
+                            Time management
+                            <br><br>
+                            Organizational skills
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work" id="work">
+            <div class="title">MY WORKS</div>
+            <div class="works">
+                <div class='workBox'>
+                    <img class='boxImg' src="./img/image1.png" />
+                    <div class='workTitle'>
+                        <div class='workTitleMain'><a href='https://nayanjithh.github.io/Google/Google%203.0/Login/login.html'>Google Form</a></div>
+                        <div class='workTitleSub'>Front-end of Google form</div>
+                    </div>
+                </div>
+                <div class='workBox'>
+                    <img class='boxImg' src="./img/image2.png" />
+                    <div class='workTitle'>
+                        <div class='workTitleMain'><a href='https://nayanjithh.github.io/Frontend-Mentor/age-calculator-app-main/age-calculator-app-main/index.html'>Age Calculator</a></div>
+                        <div class='workTitleSub'>Finds your current age</div>
+                    </div>
+                </div>
+                <div class='workBox'>
+                    <img class='boxImg' src="./img/image3.png" />
+                    <div class='workTitle'>
+                        <div class='workTitleMain'><a href='https://nayanjithh.github.io/Frontend-Mentor/calculator-app-main/index.html'>Calculator</a></div>
+                        <div class='workTitleSub'>Mathematics calculator</div>
+                    </div>
+                </div>
+                <div class='workBox'>
+                    <img class='boxImg' src="./img/image4.png" />
+                    <div class='workTitle'>
+                        <div class='workTitleMain'><a href='https://nayanjithh.github.io/Frontend-Mentor/nft-preview-card-component-main/nft-preview-card-component-main/index.html'>NFT Card</a></div>
+                        <div class='workTitleSub'>NFT card from frontend mentor</div>
+                    </div>
+                </div>
+                <div class='workBox'>
+                    <img class='boxImg' src="./img/image5.png" />
+                    <div class='workTitle'>
+                        <div class='workTitleMain'><a href='https://nayanjithh.github.io/Areyou/Idiot/Idiot.html'>Areyou?</a></div>
+                        <div class='workTitleSub'>Simple foolish game</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="title">CONTACT</div>
+            <div class="contacts">
+                <div class="details">
+                    Phone: 94976 08255
+                    <br><br>
+                    Email: nayanjithajith@gmail.com
+                </div>
+                <div class="send-details">
+                    <div class="a">
+                        <input type="text" placeholder="Name"/>
+                        <input type="text" placeholder="Email"/>
+                    </div>
+                    <input type="text" placeholder="Message"/>
+                    <button>SEND</button>
+                </div>
+            </div>
+            <div class="contact-links">
+                <a href="https://www.instagram.com/_nayanjith_/"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff; margin: 1rem;"></i></a>
+                <a href="https://www.linkedin.com/in/nayanjith/"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
+                <a href="https://github.com/nayanjithh"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff; margin: 1rem;"></i></a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

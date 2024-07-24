@@ -1,0 +1,236 @@
+@media (width < 600px) {
+    * {
+        font-size: 1.1vh;
+    }
+    .navbar {
+
+        .Titel {
+            margin-left: 2rem;
+        }
+
+        .buttons{
+            display: none;
+        }
+
+        .buttons-2{
+            display: block;
+            justify-self: right;
+            margin-right: 1.5rem;
+            cursor: pointer;
+
+            .links {
+                display: grid;
+                overflow: hidden;
+                grid-template-columns: repeat(4,1fr);
+                align-items: center;
+                justify-items: center;
+                position: absolute;
+                left: 0;
+                top: 6.4rem;
+                height: 0;
+                transition: 0.5s;
+                width: 100%;
+                background-color: #252525;
+                border-bottom: 0.2rem solid #FFF500;
+                border-top: 0.2rem solid #FFF500;
+
+                a{  
+                    color: white;
+                    text-decoration: none;
+                    font-family: Montserrat;
+                    font-size: small;
+                }
+
+                a:active{  
+                    color: #FFF500;
+                }
+            }
+        }
+
+        .buttons-2:hover > .links {
+            height: 9rem;
+        }
+    }
+    .Home {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        text-align: center;
+        height: 78.5rem;
+        padding: 7.2rem 2rem 0.65rem 2rem;
+        overflow: hidden;
+
+        .myDetails {
+            .aboutDetails {
+                margin: 3rem 2rem;
+            }
+        }
+
+        .aboutResume {
+            right: 44% !important;
+            top: 0 !important;
+            z-index: 3;
+        }
+
+        .aboutimages{
+            display: flex;
+            justify-content: center;
+
+            .myPhoto {
+                top: 5rem;
+                right: -0.7rem;
+                height: 41rem;
+            }
+
+            .vector1 {
+                top: 13rem;
+                right: 0;
+            }
+    
+            .vector2 {
+                top: 12rem;
+                right: 3rem;
+            }
+        }
+    }
+
+    .About{
+        height: 78rem;
+        padding: 8rem 2rem 0rem 2rem;
+
+        .title {
+            margin-bottom: 3rem;
+        }
+
+        .container {
+            grid-template-columns: none;
+
+            .About-navbar {
+                grid-template-columns: repeat(3,1fr);
+                height: 10rem;
+                border-bottom: 0.2rem solid white;
+                border-right: none;
+                padding-bottom: 3rem;
+
+                button {
+                    font-size: large;
+                }
+            }
+
+            .content {
+                text-align: center;
+                padding: 0;
+    
+                div{
+                    display: none;
+    
+                    h1{
+                        color: #FFF500;
+                        font-size: xx-large;
+                        text-decoration: underline;
+                        font-family:  Montserrat;
+                        margin: 2rem;
+                    }
+    
+                    p {
+                        color: white;
+                        font-family:  Montserrat;
+                        font-size: x-large;
+    
+                        strong{
+                            color: grey;
+                            font-size: x-large;
+                        }
+                    }
+                }
+    
+                .EDUCATION {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .work{
+        height: 78rem;
+        padding: 8rem 2rem 0rem 2rem;
+
+        .title {
+            margin-bottom: 0.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .works{
+            overflow-x: scroll;
+            grid-template-columns: repeat(5, 1fr);
+            height: fit-content;
+            gap: 4rem;
+
+            .workBox{
+                width: 40rem;
+                height: 60rem;
+                border-radius: 0;
+
+                .workTitle {
+                    .workTitleMain {
+                        margin-top: 2rem;
+        
+                        a {
+                            font-size: 3rem;
+                        }
+                    }
+        
+                    .workTitleSub {
+                        font-size: x-large;
+                    }
+                }
+            }
+        }
+    }
+    .contact{
+        height: 78rem;
+        padding: 8rem 2rem 0rem 2rem;
+
+        .title {
+            margin-bottom: 0.5rem;
+            margin-bottom: 4rem;
+        }
+        .contacts {
+            display: grid;
+            grid-template-columns: none;
+            text-align: center;
+    
+            .details{
+                color: white;
+                font-size: x-large;
+                font-family:  Montserrat;
+                margin-top: 1.5rem;
+                height: 15rem;
+            }
+    
+            .send-details{
+    
+                input {
+                    padding: 2rem;
+                    margin: 2;
+                    font-size: x-large;
+                }
+                input::placeholder {
+                    font-size: x-large;
+                }
+    
+                .a{
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: none;
+                }
+                input[placeholder = "Message"] {
+                    width: 87%;
+                }
+                button {
+                    margin-bottom: 6rem;
+                }
+            }
+        }
+    }
+}
